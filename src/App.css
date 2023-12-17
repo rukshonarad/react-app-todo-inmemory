@@ -1,18 +1,128 @@
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 100px;
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+
+    margin-top: 10%;
+    justify-content: center;
+    height: 100vh;
 }
 
-input {
-    margin-right: 20px;
+main {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"],
+.save-btn {
+    background-color: #3c86e7;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+input[type="submit"]:hover,
+.save-btn:hover {
+    background-color: #295da1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
 }
 
 .todo {
     display: flex;
-    gap: 30px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
 }
 
 .todo--done {
     text-decoration: line-through;
+    color: #888;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: auto;
+    width: 60px;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.edit-btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 6px;
+    width: 60px;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    display: block;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.edit-form {
+    padding: 20px;
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.save-btn {
+    background-color: #4caf50;
+}
+
+.save-btn:hover {
+    background-color: #45a049;
 }
